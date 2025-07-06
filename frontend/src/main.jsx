@@ -1,3 +1,4 @@
+import './index.css';3
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Homepage from './homepage.jsx';

@@ -3,9 +3,9 @@ export default function Homepage() {
     return (
         <div className = "text-gray-800"> 
             <section className="px-8 py-12 text-center bg-white"> 
-                <h1 className="text-4xl font-bold mb-4">Louder For Learning</h1>
+                <h1 className="text-4xl font-bold mb-4">Orange</h1>
                 <p className="max-w-2xl mx-auto text-lg">We aspire to assist teachers in underfunded school districts, who often feel overlooked and don’t get enough support to properly do their jobs. This website is intended to help teachers find resources that  can help them better allow education to spread.</p>
-                <button className="mt-6 px-6 py-2 bg-purple text-white rounded hover:bg-gray-800 transition">Learn More</button>
+                <button className="mt-4 px-6 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Learn More</button>
             </section>
             <section className="flex justify-center my-10">
                 <img className="w-3/4 rounded shadow-md" 
