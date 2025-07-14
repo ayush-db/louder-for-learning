@@ -1,11 +1,18 @@
-import './index.css';3
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './homepage.jsx';
+import AboutMe from './about-me.jsx';
 import './homepage.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about-me" element={<AboutMe />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
