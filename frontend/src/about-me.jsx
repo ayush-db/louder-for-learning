@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from './layout.jsx';
 export default function AboutMe() {
     return (
-        <Layout
+        <Layout>
         <div className = "text-gray-800"> 
             <section className="flex justify-center my-10">
                 <div>
