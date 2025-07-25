@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from './navbar.jsx';
 export default function Homepage() {
     return (
-        <div className = "text-gray-800"> 
+
+        <>
+        <Navbar />
+       <div className = "text-gray-800"> 
             <section className="px-8 py-12 text-center bg-white"> 
                 <h1 className="text-4xl font-bold mb-4">Louder for Learning</h1>
                 <p className="max-w-2xl mx-auto text-lg">We aspire to assist teachers in underfunded school districts, who often feel overlooked and don’t get enough support to properly do their jobs. This website is intended to help teachers find resources that  can help them better allow education to spread.</p>
@@ -40,6 +44,7 @@ export default function Homepage() {
                 </div>
             </section>
         </div>
+        </>
     );
     }
     

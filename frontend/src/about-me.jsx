@@ -1,8 +1,9 @@
 import React from 'react';
-import Layout from './layout.jsx';
+import Navbar from './navbar.jsx';
 export default function AboutMe() {
     return (
-        <Layout>
+        <>
+        <Navbar />
         <div className = "text-gray-800"> 
             <section className="flex justify-center my-10">
                 <div>
@@ -31,6 +32,6 @@ export default function AboutMe() {
                     </form>
             </section>
         </div>
-        </Layout>
+        </>
     );
     }
