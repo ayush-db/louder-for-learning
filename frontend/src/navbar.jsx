@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <div className="md-hidden">
                 <button onClick={toggleMenu} aria-label="toggle menu">
-                    {isOpen ? < x size={24} /> : <menu size={24} />}
+                    {isOpen ? 'Close': 'Menu'}
                 </button>
             </div>
             <ul className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
