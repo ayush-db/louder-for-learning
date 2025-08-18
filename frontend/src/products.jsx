@@ -10,16 +10,17 @@ export default function Products() {
                         <h1 className="text-4xl font-bold">Products</h1>
                     </div>
                 </section>
-                <section className="container mx-auto p-6">
-                    <div>
-                        <h1 className="text-3xl font-bold">Products</h1>
-                        <p className="mt-4">Louder For Learning is a non-profit organization that provides resources to help teachers in underfunded school districts.</p>
-                    </div>
-                </section>
                 <section className="flex justify-center my-10">
                     <div>
-                        <h2>What We Offer</h2>
-                        <p>Louder For Learning offers several resources that can help teachers in underfunded school districts - these include grant proposals, sites that can provide cheaper textbooks and other supplies, and ways to get in contact with representatives that could potentially help.</p>
+                        <p>Here, we have resources that can potentially help teachers, especially those in underfunded school districts. The resources are categorized into 3 categories.</p>
+                        <div>
+                            <h2>Table of Contents:</h2>
+                            <ol>
+                                <li>Grant Proposals</li>
+                                <li>Professional Development</li>
+                                <li>Donators</li>
+                            </ol>
+                        </div>
                     </div>
                     
                 </section>

@@ -21,6 +21,9 @@ const Navbar = () => {
                 <li className="px-4 py-2 hover:bg-gray-200 rounded">
                     <Link to="/about-me">About Me</Link>
                 </li>
+                <li className="px-4 py-2 hover:bg-gray-200 rounded">
+                    <Link to="/products">Products</Link>
+                </li>
             </ul>
             </nav>
     );
