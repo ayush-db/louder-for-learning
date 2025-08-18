@@ -1,9 +1,21 @@
 import React from 'react';
-import Layout from './layout.jsx';
+import Navbar from './navbar';
+
 export default function Products() {
      return (
-            <Layout>
             <div className = "text-gray-800"> 
+                <Navbar />
+                <section className="bg-purple-600 text-white p-6">
+                    <div className="container mx-auto text-center">
+                        <h1 className="text-4xl font-bold">Products</h1>
+                    </div>
+                </section>
+                <section className="container mx-auto p-6">
+                    <div>
+                        <h1 className="text-3xl font-bold">Products</h1>
+                        <p className="mt-4">Louder For Learning is a non-profit organization that provides resources to help teachers in underfunded school districts.</p>
+                    </div>
+                </section>
                 <section className="flex justify-center my-10">
                     <div>
                         <h2>What We Offer</h2>
@@ -11,4 +23,5 @@ export default function Products() {
                     </div>
                     
                 </section>
-        }
+            </div>
+        )}
