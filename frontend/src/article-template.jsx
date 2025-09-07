@@ -12,5 +12,7 @@ const articletemplate = ({ title, subtitle, category, author, content }) => {
                 {subtitle && <h2 className="text-xl text-gray-700 mt-2">{subtitle}</h2>}
                 <p className="text-sm text-gray-600 mt-1">By {author}</p>
             </header>
+        </article> }
+        
     )
 export default articletemplate;
