@@ -1,3 +1,4 @@
+//not using this one for now
 import React from 'react';
 const articletemplate = ({ title, subtitle, category, author, content }) => {
     return (
