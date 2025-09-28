@@ -22,7 +22,12 @@ export default function Products() {
                             </ol>
                         </div>
                     </div>
-                    
+                    <div>
+                        <h2>Featured Articles</h2>
+                            <ul>
+                                <a href="/articles/article1">Fund For Teachers</a>
+                            </ul>
+                    </div>
                 </section>
             </div>
         )}
