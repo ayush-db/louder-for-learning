@@ -25,8 +25,12 @@ export default function Products() {
                     <div>
                         <h2>Featured Articles</h2>
                             <ul>
-                                <a href="/articles/article1">Fund For Teachers</a>
-                            </ul>
+                                <li><a href="/articles/article1">Fund For Teachers</a></li>
+                                <li><a href="/articles/article2">AAEF</a></li>
+                                <li><a href="/articles/article3">DonorsChoose Grants</a></li>
+                                <li><a href="/articles/article4">NEA Foundation Grants</a></li>
+                                <li><a href="/articles/article5">MDEF</a></li>             
+                                </ul>
                     </div>
                 </section>
             </div>
