@@ -1,27 +1,32 @@
 import React,{useState}from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
     return (
-        <nav className="bg-white shadow">
-            <div className = "text-2xl font-bold text-blue-600">
+        <nav className="navbar">
+            <div className = "navbar-container">
+                <div className="navbar-brand">
                 <Link to="/">Louder for Learning</Link>
+                </div>
             </div>
-            <div className="md-hidden">
+            <div className="navbar-menu">
+                <div className='navbar-toggle'>
                 <button onClick={toggleMenu} aria-label="toggle menu">
                     {isOpen ? 'Close': 'Menu'}
                 </button>
+                </div>
             </div>
-            <ul className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
-                <li className="px-4 py-2 hover:bg-gray-200 rounded">
+            <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
+                <li className="navbar-item">
                     <Link to="/">Home</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 rounded">
+                <li className="navbar-item">
                     <Link to="/about-me">About Me</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 rounded">
+                <li className="navbar-item">
                     <Link to="/products">Products</Link>
                 </li>
             </ul>
