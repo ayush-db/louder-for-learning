@@ -5,7 +5,8 @@ Write-Host "🚀 Setting up Louder for Learning..." -ForegroundColor Green
 try {
     $nodeVersion = node --version
     Write-Host "✅ Node.js version $nodeVersion detected" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "❌ Node.js is not installed. Please install Node.js v16 or higher." -ForegroundColor Red
     Write-Host "   Download from: https://nodejs.org/" -ForegroundColor Yellow
     exit 1
@@ -22,7 +23,8 @@ if ($nodeVersionNumber -lt 16) {
 try {
     $psqlVersion = psql --version
     Write-Host "✅ PostgreSQL detected" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "⚠️  PostgreSQL is not installed. Please install PostgreSQL to use the database features." -ForegroundColor Yellow
     Write-Host "   You can continue without it, but database features won't work." -ForegroundColor Yellow
     Write-Host "   Download from: https://www.postgresql.org/download/" -ForegroundColor Yellow
@@ -33,7 +35,8 @@ Write-Host "📦 Installing dependencies..." -ForegroundColor Blue
 try {
     npm run install-all
     Write-Host "✅ Dependencies installed successfully" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "❌ Failed to install dependencies. Please check your internet connection and try again." -ForegroundColor Red
     exit 1
 }
@@ -45,10 +48,12 @@ if (-not (Test-Path ".env")) {
         Copy-Item "env.example" ".env"
         Write-Host "✅ Created .env file from template" -ForegroundColor Green
         Write-Host "⚠️  Please edit .env file with your database credentials" -ForegroundColor Yellow
-    } else {
+    }
+    else {
         Write-Host "⚠️  env.example file not found. You may need to create .env manually." -ForegroundColor Yellow
     }
-} else {
+}
+else {
     Write-Host "✅ .env file already exists" -ForegroundColor Green
 }
 
