@@ -1,13 +1,17 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.3.5"
-  },
   "name": "louder-for-learning",
   "version": "1.0.0",
-  "description": "",
+  "description": "A full-stack learning platform",
   "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "browserslist": "^4.25.0",
     "caniuse-lite": "^1.0.30001721",
@@ -23,8 +27,11 @@
     "source-map-js": "^1.2.1",
     "update-browserslist-db": "^1.1.3"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.3.5",
+    "concurrently": "^8.2.2"
   },
   "repository": {
     "type": "git",
