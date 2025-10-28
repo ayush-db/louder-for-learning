@@ -22,7 +22,7 @@ if ($nodeVersionNumber -lt 16) {
 # Check if PostgreSQL is installed
 try {
     $psqlVersion = psql --version
-    Write-Host "✅ PostgreSQL detected" -ForegroundColor Green
+    Write-Host "✅ PostgreSQL detected: $psqlVersion" -ForegroundColor Green
 }
 catch {
     Write-Host "⚠️  PostgreSQL is not installed. Please install PostgreSQL to use the database features." -ForegroundColor Yellow
