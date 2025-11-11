@@ -1,0 +1,17 @@
+[build]
+  # Build command - uses root package.json script which handles frontend build
+  # Note: Netlify auto-installs root dependencies, but frontend deps need to be installed
+  command = "npm run install-all && npm run build"
+  # Publish directory - where Vite outputs the built files
+  publish = "frontend/dist"
+
+# Redirect rules for React Router (SPA routing)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Node version (Netlify uses this during build)
+[build.environment]
+  NODE_VERSION = "18"
+
