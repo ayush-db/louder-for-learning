@@ -45,6 +45,7 @@ export default function AboutMe() {
         finally {
             setIsSubmitting(false);
         }
+    };
     return (
         <>
         <Navbar />
