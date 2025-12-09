@@ -80,7 +80,8 @@ export default function AboutMe() {
                     >
                         <input type="hidden" name="form-name" value="contact-form" />
                         <input type="hidden" name="bot-field"/>
-                        {/*start here1*/}
+                        {status === 'Message sent successfully!' && (<div className="form-message form-message-success">Success</div>)}
+                        {status === 'Failed to send message. Please try again later.' && (<div className="form-message form-message-error">Error</div>)}
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input 
@@ -88,7 +89,10 @@ export default function AboutMe() {
                                 id="name" 
                                 name="name" 
                                 placeholder="Your full name"
+                                value ={formData.name}
+                                onChange={handleChange}
                                 required 
+                                disabled={isSubmitting}
                             />
                         </div>
                         <div className="form-group">
@@ -98,7 +102,10 @@ export default function AboutMe() {
                                 id="email" 
                                 name="email" 
                                 placeholder="your.email@example.com"
+                                value ={formData.email}
+                                onChange={handleChange}
                                 required 
+                                disabled={isSubmitting}
                             />
                         </div>
                         <div className="form-group">
@@ -107,12 +114,15 @@ export default function AboutMe() {
                                 id="message" 
                                 name="message" 
                                 placeholder="Tell us how we can help you..."
+                                value ={formData.message}
+                                onChange={handleChange}
                                 rows="4" 
                                 required
+                                disabled={isSubmitting}
                             ></textarea>
                         </div>
-                        <button type="submit" className="submit-button">
-                            Send Message
+                        <button type="submit" disabled={isSubmitting}>
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </form>
                 </div>
