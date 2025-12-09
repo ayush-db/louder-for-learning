@@ -80,7 +80,7 @@ export default function AboutMe() {
                     >
                         <input type="hidden" name="form-name" value="contact-form" />
                         <input type="hidden" name="bot-field"/>
-                        {/*start here*/}
+                        {/*start here1*/}
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input 
