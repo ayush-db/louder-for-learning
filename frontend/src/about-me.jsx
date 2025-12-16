@@ -41,11 +41,11 @@ export default function AboutMe() {
         } catch (error) {
             console.error('Error submitting form:', error);
             setStatus('An error occurred. Please try again later.');
-        }
-        finally {
+        } finally {
             setIsSubmitting(false);
         }
     };
+    
     return (
         <>
         <Navbar />
