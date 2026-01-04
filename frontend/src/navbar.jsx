@@ -52,12 +52,6 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/articles" className="navbar-link" onClick={() => setIsOpen(false)}>
-                                <span className="link-icon">📚</span>
-                                Articles
-                            </Link>
-                        </li>
-                        <li className="navbar-item">
                             <Link to="/articles/article1" className="navbar-link featured" onClick={() => setIsOpen(false)}>
                                 <span className="link-icon">⭐</span>
                                 Featured Article
