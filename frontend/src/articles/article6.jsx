@@ -60,6 +60,7 @@ export default function Articles() {
 
                             While the AEF is an interesting idea conceptually, it is very difficult to see any positives from it as there is no explicit payment from the AEF. This means that it will still be difficult for most teachers to get resources they need, unless they end up getting money from the national network the AEF gives them. I’d recommend not using this one since the cons far outweigh the pros. 
 
+                        </p>
                         </div>
 
                         <div className="pros-cons-section">
