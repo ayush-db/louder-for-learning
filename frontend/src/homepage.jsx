@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './navbar.jsx';
+import SubstackEmbed from './components/substack-embed.jsx';
 import './homepage.css';
 
 export default function Homepage() {
@@ -119,6 +120,14 @@ export default function Homepage() {
                             <button className="card-button">Learn More</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            {/* Newsletter Section */}
+            <div className="newsletter-section">
+                <div className="newsletter-content">
+                    <h2 className="section-title">Stay Updated</h2>
+                    <p className="section-subtitle">Subscribe to our newsletter for the latest resources and opportunities</p>
+                    <SubstackEmbed />
                 </div>
             </div>
 
