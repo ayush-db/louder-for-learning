@@ -45,6 +45,7 @@ export default function Products() {
                             <li><a href="/articles/article4">NEA Foundation Grants</a></li>
                             <li><a href="/articles/article5">MDEF</a></li>
                             <li><a href="/articles/article6">Albert Einstein Fellowship</a></li>
+                            <li><a href="/articles/article7">Discovery Research Grant</a></li>
                         </ul>
                     </div>
                 </div>

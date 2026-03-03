@@ -11,6 +11,7 @@ import Article3 from './articles/article3.jsx';
 import Article4 from './articles/article4.jsx';
 import Article5 from './articles/articles5.jsx';
 import Article6 from './articles/article6.jsx';
+import Article7 from './articles/article7.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ root.render(
         <Route path="/articles/article4" element={<Article4 />} />
         <Route path="/articles/article5" element={<Article5 />} />
         <Route path="/articles/article6" element={<Article6 />} />
+        <Route path="/articles/article7" element={<Article7 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

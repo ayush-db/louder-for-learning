@@ -52,7 +52,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/articles/article1" className="navbar-link featured" onClick={() => setIsOpen(false)}>
+                            <Link to="/articles/article5" className="navbar-link featured" onClick={() => setIsOpen(false)}>
                                 <span className="link-icon">⭐</span>
                                 Featured Article
                             </Link>
