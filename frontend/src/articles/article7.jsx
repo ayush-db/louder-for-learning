@@ -54,6 +54,7 @@ export default function Articles() {
                             
                             <p className="article-paragraph">
                             Those affected are selected through an application system, consisting of two parts: learning and teaching.
+                            </p>
 
                             <p className="article-paragraph">
                             This is more of a research program rather than a full on grant, but it serves as a development program that PreK-12 teachers in STEM programs can use to improve their learning experiences.
