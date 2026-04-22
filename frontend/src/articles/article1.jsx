@@ -87,7 +87,7 @@ export default function Articles() {
                                 <div className="cons-section">
                                     <h3 className="section-title cons-title">⚠️ Considerations</h3>
                                     <ul className="cons-list">
-                                        <li>Application deadline: October 1st</li>
+                                        <li>Applications open on: October 1st</li>
                                         <li>Limited professional development options in some areas</li>
                                         <li>Requires self-directed planning</li>
                                     </ul>
@@ -100,7 +100,7 @@ export default function Articles() {
                                 Apply Now
                                 <span className="button-arrow">→</span>
                             </a>
-                            <p className="cta-note">Application deadline: October 1st, 2025</p>
+                            <p className="cta-note">Application are closed currently, but the applications for the 2027 school year open on October 1st, 2026</p>
                         </div>
                     </div>
                 </article>

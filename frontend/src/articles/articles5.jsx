@@ -43,7 +43,7 @@ export default function Articles() {
                             </div>
                             <div className="highlight-item">
                                 <span className="highlight-label">Next Application</span>
-                                <span className="highlight-value">Jan-Apr 2026</span>
+                                <span className="highlight-value">Jan-Apr 2027</span>
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@ export default function Articles() {
                                 Learn More
                                 <span className="button-arrow">→</span>
                             </a>
-                            <p className="cta-note">Next application season: January-April 2026</p>
+                            <p className="cta-note">Next application season: January-April 2027</p>
                         </div>
                     </div>
                 </article>
